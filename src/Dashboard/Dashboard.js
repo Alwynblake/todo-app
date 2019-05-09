@@ -2,6 +2,7 @@ import React from 'react';
 import uuidv1 from 'uuid/v1';
 
 import NoteCreateForm from '../NoteCreateForm/NoteCreateForm';
+import NoteList from '../NoteList/NoteList';
 
 export default class Dashboard extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ export default class Dashboard extends React.Component {
   };
 
 // handleChange = (event) => {
-//     // let name equals event.target.name
+//     let name equals event.target.name
 //     let { name, value } = event.target;
 //
 //     this.setState({ [name]:  value });
@@ -44,11 +45,15 @@ export default class Dashboard extends React.Component {
   render() {
     console.log(this.state);
     return (
+        <div>
+        <NoteList
+            notes={this.state.notes}/>
   <NoteCreateForm
       handleTitle={this.handleTitle}
       handleContent={this.handleContent}
       handleSubmit={this.handleSubmit}
   />
+        </div>
     );
   }
 }
