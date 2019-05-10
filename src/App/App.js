@@ -16,6 +16,9 @@ export default class App extends React.Component {
                 <li><Link to={HOME_ROUTE}>Home</Link></li>
                 <li><Link to="/dashboard">Dashboard</Link></li>
               </ul>
+                {/*  place a header image here */}
+              <img src={"https://www.binaryfortress.com/ImagesCommon/Icons/256x256/NotepadReplacer.png"}>
+              </img>
             </nav>
             <Route exact path={HOME_ROUTE} component={Landing}/>
             <Route exact path="/dashboard" component={Dashboard}/>

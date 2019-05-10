@@ -1,6 +1,6 @@
 import React from 'react';
 import uuidv1 from 'uuid/v1';
-
+import NoteItem from '../NoteItem/NoteItem';
 import NoteCreateForm from '../NoteCreateForm/NoteCreateForm';
 import NoteList from '../NoteList/NoteList';
 
@@ -42,6 +42,13 @@ export default class Dashboard extends React.Component {
     this.setState({ title: '', content: '' });
   };
 
+
+  // handleRemoveExpense = (event) => {
+  //   this.setState(previousState => ({
+  //     event: previousState.event.filter(currentNote => currentNote.id !== event.id),
+  //   }));
+
+
   render() {
     console.log(this.state);
     return (
@@ -53,7 +60,9 @@ export default class Dashboard extends React.Component {
   />
           <NoteList
               notes={this.state.notes}/>
+
         </div>
+
     );
   }
 }

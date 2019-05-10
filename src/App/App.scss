@@ -5,7 +5,9 @@
 
 .app {
   background-color: $primary-color;
-  font-size: calc(15px + 2vmin);
+  //align-items: stretch;
+  animation: src infinite 20s linear;
+  font-size: calc(5px + 3vmin);
 }
 
 //.App {
@@ -30,7 +32,7 @@
 //}
 //
 //.App-link {
-//  color: #61dafb;
+//  color: #70bbfb;
 //}
 //@keyframes App-logo-spin {
 //  from {

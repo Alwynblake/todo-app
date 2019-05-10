@@ -1,5 +1,5 @@
 import React from 'react';
-// import NoteItem from '../noteitem';
+import NoteItem from '../NoteItem/NoteItem';
 
 const NoteList = ({ notes }) => (
     <div>
@@ -9,6 +9,7 @@ const NoteList = ({ notes }) => (
               <li key={`note-${index}`}>
                 <h2>{note.title}</h2>
                 <p>{note.content}</p>
+                <NoteItem/>
               </li>
           ))
         }
