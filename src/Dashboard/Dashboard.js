@@ -16,7 +16,7 @@ export default class Dashboard extends React.Component {
   }
 
   addNote = (note) => {
-    note.id = uuidv1()
+    note.id = uuidv1();
 
     this.setState({
       notes: [...this.state.notes, note],
@@ -46,13 +46,13 @@ export default class Dashboard extends React.Component {
     console.log(this.state);
     return (
         <div>
-        <NoteList
-            notes={this.state.notes}/>
   <NoteCreateForm
       handleTitle={this.handleTitle}
       handleContent={this.handleContent}
       handleSubmit={this.handleSubmit}
   />
+          <NoteList
+              notes={this.state.notes}/>
         </div>
     );
   }
