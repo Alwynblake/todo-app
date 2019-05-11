@@ -1,6 +1,6 @@
 import React from 'react';
 import uuidv1 from 'uuid/v1';
-import NoteItem from '../NoteItem/NoteItem';
+// import NoteItem from '../NoteItem/NoteItem';
 import NoteCreateForm from '../NoteCreateForm/NoteCreateForm';
 import NoteList from '../NoteList/NoteList';
 
@@ -41,15 +41,15 @@ export default class Dashboard extends React.Component {
 
     this.setState({ title: '', content: '' });
   };
+////////////////
 
-
-  // handleRemoveExpense = (event) => {
+  // handleRemoveNote = note => {
   //   this.setState(previousState => ({
-  //     event: previousState.event.filter(currentNote => currentNote.id !== event.id),
+  //     notes: previousState.notes.filter(currentNote => currentNote.id !== note.id),
   //   }));
-
-
-  render() {
+  // };
+/////////////////
+  render(){
     console.log(this.state);
     return (
         <div>

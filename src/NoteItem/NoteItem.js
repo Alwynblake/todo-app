@@ -3,18 +3,16 @@ import React from 'react';
 
 // import NoteList from "../NoteList/NoteList";
 
-// class NoteItem extends React.component {
-//   render() {
-//     return(
-//         <div>
-//     <p>The walker is in the building</p>
-//         </div>
-//     )
-//   }
-// }
+// const currentNote = this.props;
+// const NoteItem = () => (
+//     <div>
+//       <button onClick={this.props.handleRemoveNote(this.props.notes)}>Remove</button>
+//     </div>
+// );
+
+/////***********
 const NoteItem =() => (
     <div>
-          {/*<p>The walker is in the building</p>*/}
       <button>Remove</button>
 
     </div>

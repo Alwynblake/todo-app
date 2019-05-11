@@ -7,6 +7,7 @@ const NoteList = ({ notes }) => (
         {
           notes.map((note, index) => (
               <li key={`note-${index}`}>
+                <h1>__________</h1>
                 <h2>{note.title}</h2>
                 <p>{note.content}</p>
                 <NoteItem/>
