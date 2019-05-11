@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-
 import Dashboard from '../Dashboard/Dashboard';
 import Landing from '../Landing/Landing';
+import './App.scss';
 
 export default class App extends React.Component {
   render(){
     const HOME_ROUTE = '/';
     return(
-        <main>
+
+        <main className="app">
           <BrowserRouter>
             <nav>
               <ul>

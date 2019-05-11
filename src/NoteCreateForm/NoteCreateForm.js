@@ -13,7 +13,7 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           name='content'
           placeholder='note content'
           type='text'
-          cols='30'
+          cols='20'
           rows='10'
           onChange={handleContent}
       />
