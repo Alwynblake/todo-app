@@ -1,13 +1,12 @@
 import React from 'react';
 import uuidv1 from 'uuid/v1';
-// import NoteItem from '../NoteItem/NoteItem';
 import NoteCreateForm from '../NoteCreateForm/NoteCreateForm';
 import NoteList from '../NoteList/NoteList';
+// import NoteItem from "../NoteItem/NoteItem";
 
 export default class Dashboard extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       notes: [],
       title: '',
@@ -15,12 +14,12 @@ export default class Dashboard extends React.Component {
     };
   }
 
-  addNote = (note) => {
-    note.id = uuidv1();
+  addNote = (title,content) => {
+    let id = uuidv1();
+    this.setState(prev => ({
+      notes: [...prev.notes,{title, content,id}],
+    }));
 
-    this.setState({
-      notes: [...this.state.notes, note],
-    });
   };
 
 // handleChange = (event) => {
@@ -37,20 +36,27 @@ export default class Dashboard extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    this.addNote(this.state);
+    this.addNote(this.state.title,this.state.content);
 
-    this.setState({ title: '', content: '' });
+    //this.setState({ title: '', content: '' });
   };
-////////////////
 
-  // handleRemoveNote = note => {
-  //   this.setState(previousState => ({
-  //     notes: previousState.notes.filter(currentNote => currentNote.id !== note.id),
-  //   }));
-  // };
+  handleRemoveNote = (note) => {
+    this.setState(previousState => ({
+      notes: previousState.notes.filter(currentNotes => currentNotes.id !== note.id),
+    }));
+  };
+
 /////////////////
+  handleUpdateNote = (note) =>
+      this.setState((previousState) => {
+        const updateNotes = previousState.notes.map(currentNote =>
+        note.id === currentNote.id ? note : currentNote
+        );
+        return { notes: updateNotes };
+      });
+  ///////////////
   render(){
-    console.log(this.state);
     return (
         <div>
   <NoteCreateForm
@@ -58,9 +64,12 @@ export default class Dashboard extends React.Component {
       handleContent={this.handleContent}
       handleSubmit={this.handleSubmit}
   />
-          <NoteList
-              notes={this.state.notes}/>
-
+    <NoteList
+            notes={this.state.notes}
+            handleRemoveNote={this.handleRemoveNote}
+        />
+          {/*<NoteCreateForm handleComplete={this.handleAddNote}/>*/}
+          {/*{ this.renderNotes() }*/}
         </div>
 
     );
