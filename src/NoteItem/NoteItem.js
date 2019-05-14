@@ -1,28 +1,49 @@
 import React from 'react';
 import NoteCreateForm from "../NoteCreateForm/NoteCreateForm";
-import uuidv1 from "uuid/v1";
-// import Dashboard from '.../dashboard/dashboard';
-//
-// import NoteList from "../NoteList/NoteList";
+import Modal from '../Modal/Modal';
 
-// const currentNotes = this.props;
-// const NoteItem = () => (
-//     <div>
-//       <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
-//     </div>
-// );
 
-/////***********
 export default class NoteItem extends React.Component {
-  render() {
-    const currentNotes = this.props.note;
-    console.log(currentNotes, 'currentNotes');
-    return(
-        <li key={currentNotes.id}>
-          {currentNotes.title} : {currentNotes.content}
-          <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
+
+render() {
+  const { handleUpdateNote } = this.props;
+  const currentNote = this.props.note;
+  // -------------------------------------------------------------------------------
+  // HELPER FUNCTIONS
+  // -------------------------------------------------------------------------------
+  const showModal = () => handleUpdateNote({...currentNote, editing: true});
+  //  - this function will close the modal
+
+  const hideModal = ()=> handleUpdateNote({...currentNote, editing: false});
+
+  // -------------------------------------------------------------------------------
+
+  const currentNotes = this.props.note;
+  return(
+      <li key={currentNotes.id}>
+        {currentNotes.title} : {currentNotes.content}
+
+        <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
+        <button onClick={showModal}>Edit</button>
+        <Modal show={currentNotes.editing} hideModal={hideModal}>
           <NoteCreateForm/>
-        </li>
-    )
-  }
+        </Modal>
+      </li>
+  );
 }
+
+}
+
+//////
+// export default class NoteItem extends React.Component {
+//   render() {
+//     const currentNotes = this.props.note;
+//     return(
+//         <li key={currentNotes.id}>
+//           {currentNotes.title} : {currentNotes.content}
+//           <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
+//           {/*<NoteCreateForm/>*/}
+//         </li>
+//     )
+//   }
+// }

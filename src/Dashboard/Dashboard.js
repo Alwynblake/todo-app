@@ -1,6 +1,5 @@
 import React from 'react';
 import uuidv1 from 'uuid/v1';
-// import NoteItem from '../NoteItem/NoteItem';
 import NoteCreateForm from '../NoteCreateForm/NoteCreateForm';
 import NoteList from '../NoteList/NoteList';
 // import NoteItem from "../NoteItem/NoteItem";
@@ -17,7 +16,6 @@ export default class Dashboard extends React.Component {
 
   addNote = (title,content) => {
     let id = uuidv1();
-    // console.log(note,'add Note');
     this.setState(prev => ({
       notes: [...prev.notes,{title, content,id}],
     }));
@@ -36,26 +34,29 @@ export default class Dashboard extends React.Component {
   handleContent = (event) => this.setState({ content: event.target.value });
 
   handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     this.addNote(this.state.title,this.state.content);
 
     //this.setState({ title: '', content: '' });
   };
-////////////////
-//   example: var sample = [1, 2, 3]
-//   example: var result = sample.filter(elem => elem !== 2)
 
   handleRemoveNote = (note) => {
     this.setState(previousState => ({
       notes: previousState.notes.filter(currentNotes => currentNotes.id !== note.id),
     }));
-    // console.log('remobinh note!!!!!!!!!')
   };
-  //
+
 /////////////////
+  handleUpdateNote = (note) =>
+      this.setState((previousState) => {
+        const updateNotes = previousState.notes.map(currentNote =>
+        note.id === currentNote.id ? note : currentNote
+        );
+        return { notes: updateNotes };
+      });
+  ///////////////
   render(){
-    // console.log(this.state);
     return (
         <div>
   <NoteCreateForm
@@ -67,6 +68,8 @@ export default class Dashboard extends React.Component {
             notes={this.state.notes}
             handleRemoveNote={this.handleRemoveNote}
         />
+          {/*<NoteCreateForm handleComplete={this.handleAddNote}/>*/}
+          {/*{ this.renderNotes() }*/}
         </div>
 
     );

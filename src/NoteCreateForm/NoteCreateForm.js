@@ -8,6 +8,7 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           name='title'
           placeholder='title'
           type='text'
+          // value={this.state.title}
           onChange={handleTitle}
       />
 </li>
@@ -18,6 +19,7 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           type='text'
           cols='20'
           rows='5'
+          // value={this.state.content}
           onChange={handleContent}
       />
           </li>
