@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ac8cf7-f72f-4bbf-bc87-ea2b98fb31c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NoteItem/NoteItem.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NoteItem/NoteItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NoteItem/NoteItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NoteList/NoteList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/NoteList/NoteList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="948">
-              <caret line="52" column="55" lean-forward="true" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+            <state relative-caret-position="571">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -55,9 +53,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/logo.svg">
-          <provider selected="true" editor-type-id="images" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NoteList/NoteList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -81,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NoteItem/NoteItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="240">
               <caret line="10" column="76" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -151,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/NoteCreateForm/NoteCreateForm.scss" />
         <option value="$PROJECT_DIR$/src/App/App.scss" />
         <option value="$PROJECT_DIR$/src/styles/_base.scss" />
-        <option value="$PROJECT_DIR$/src/NoteList/NoteList.js" />
         <option value="$PROJECT_DIR$/src/NoteCreateForm/NoteCreateForm.js" />
         <option value="$PROJECT_DIR$/src/NoteItem/NoteItem.scss" />
         <option value="$PROJECT_DIR$/src/Modal/Modal.js" />
         <option value="$PROJECT_DIR$/src/NoteItem/NoteItem.js" />
         <option value="$PROJECT_DIR$/src/Modal/Modal.scss" />
         <option value="$PROJECT_DIR$/src/Dashboard/Dashboard.js" />
+        <option value="$PROJECT_DIR$/src/NoteList/NoteList.js" />
       </list>
     </option>
   </component>
@@ -168,8 +173,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2369" />
-    <option name="y" value="23" />
+    <option name="x" value="123" />
+    <option name="y" value="35" />
     <option name="width" value="1269" />
     <option name="height" value="909" />
   </component>
@@ -281,15 +286,15 @@
       <workItem from="1557258372723" duration="9429000" />
       <workItem from="1557368922247" duration="70000" />
       <workItem from="1557418185458" duration="74505000" />
-      <workItem from="1557883481502" duration="6031000" />
+      <workItem from="1557883481502" duration="7012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96738000" />
+    <option name="totallyTimeSpent" value="97719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2369" y="23" width="1269" height="909" extended-state="0" />
+    <frame x="123" y="35" width="1269" height="909" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17313915" />
@@ -431,16 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NoteList/NoteList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -496,16 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NoteItem/NoteItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modal/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -525,8 +510,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Dashboard/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="52" column="55" lean-forward="true" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+        <state relative-caret-position="571">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NoteItem/NoteItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NoteList/NoteList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

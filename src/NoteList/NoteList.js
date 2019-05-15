@@ -1,7 +1,8 @@
 import React from 'react';
 import NoteItem from '../NoteItem/NoteItem';
 
-const NoteList = ({ notes, handleRemoveNote }) => (
+const NoteList = ({ notes, handleRemoveNote, handleUpdateNote
+                  }) => (
     <div>
 
       <ul>
@@ -12,7 +13,8 @@ const NoteList = ({ notes, handleRemoveNote }) => (
                 {/*<h2>{note.title}</h2>*/}
                 {/*<p>{note.content}</p>*/}
                 <NoteItem note={note}
-                handleRemoveNote={handleRemoveNote}/>
+                handleRemoveNote={handleRemoveNote}
+                handleUpdateNote={handleUpdateNote}/>
               </li>
           ))
         }

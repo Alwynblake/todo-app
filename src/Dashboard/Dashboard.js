@@ -33,11 +33,11 @@ export default class Dashboard extends React.Component {
 
   handleContent = (event) => this.setState({ content: event.target.value });
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
 
-    this.addNote(this.state.title,this.state.content);
-
+   await this.addNote(this.state.title,this.state.content);
+console.log(this.state,'saadadasdadad');
   };
 
   handleRemoveNote = (note) => {
@@ -67,7 +67,9 @@ export default class Dashboard extends React.Component {
     <NoteList
             notes={this.state.notes}
             handleRemoveNote={this.handleRemoveNote}
-        />
+            handleUpdateNote={this.handleUpdateNote}
+
+    />
           {/*<NoteCreateForm handleComplete={this.handleAddNote}/>*/}
           {/*{ this.renderNotes() }*/}
         </div>
