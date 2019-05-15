@@ -2,48 +2,28 @@ import React from 'react';
 import NoteCreateForm from "../NoteCreateForm/NoteCreateForm";
 import Modal from '../Modal/Modal';
 
-
 export default class NoteItem extends React.Component {
+  render() {
+    const {handleUpdateNote} = this.props;
+    const currentNotes = this.props.note;
 
-render() {
-  const { handleUpdateNote } = this.props;
-  const currentNote = this.props.note;
-  // -------------------------------------------------------------------------------
-  // HELPER FUNCTIONS
-  // -------------------------------------------------------------------------------
-  const showModal = () => handleUpdateNote({...currentNote, editing: true});
-  //  - this function will close the modal
+    const showModal = () => handleUpdateNote({...currentNotes, editing: true});
+    const hideModal = () => handleUpdateNote({...currentNotes, editing: false});
 
-  const hideModal = ()=> handleUpdateNote({...currentNote, editing: false});
+    const handleUpdate = (updatedNote) => {
+      handleUpdateNote({...updatedNote, editing: false});
+    };
 
-  // -------------------------------------------------------------------------------
+    return(
+        <li className="list" key={currentNotes.id}>
+          {currentNotes.title} : {currentNotes.content}
 
-  const currentNotes = this.props.note;
-  return(
-      <li key={currentNotes.id}>
-        {currentNotes.title} : {currentNotes.content}
-
-        <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
-        <button onClick={showModal}>Edit</button>
-        <Modal show={currentNotes.editing} hideModal={hideModal}>
-          <NoteCreateForm/>
-        </Modal>
-      </li>
-  );
+          <button onClick={this.props.handleRemoveNote.bind(null, currentNotes)}>Remove</button>
+          <button onClick={showModal}>Edit</button>
+          <Modal show={currentNotes.editing} hideModal={hideModal}>
+            <NoteCreateForm note={currentNotes} handleComplete={handleUpdate}/>
+          </Modal>
+        </li>
+    )
+  }
 }
-
-}
-
-//////
-// export default class NoteItem extends React.Component {
-//   render() {
-//     const currentNotes = this.props.note;
-//     return(
-//         <li key={currentNotes.id}>
-//           {currentNotes.title} : {currentNotes.content}
-//           <button onClick={this.props.handleRemoveNote.bind(null, this.props.notes)}>Remove</button>
-//           {/*<NoteCreateForm/>*/}
-//         </li>
-//     )
-//   }
-// }
