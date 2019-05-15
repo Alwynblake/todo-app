@@ -38,7 +38,6 @@ export default class Dashboard extends React.Component {
 
     this.addNote(this.state.title,this.state.content);
 
-    //this.setState({ title: '', content: '' });
   };
 
   handleRemoveNote = (note) => {
@@ -54,6 +53,7 @@ export default class Dashboard extends React.Component {
         note.id === currentNote.id ? note : currentNote
         );
         return { notes: updateNotes };
+
       });
   ///////////////
   render(){
