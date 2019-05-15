@@ -1,7 +1,6 @@
 import React from 'react';
 import NoteCreateForm from "../NoteCreateForm/NoteCreateForm";
 import Modal from '../Modal/Modal';
-// import Dashboard from '..Dashboard/Dashboard';
 
 export default class NoteItem extends React.Component {
   render() {
