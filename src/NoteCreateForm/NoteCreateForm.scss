@@ -1,6 +1,15 @@
 @import "../styles/_vars.scss";
 
-.app {
-  display: flex;
-  font-size: calc(5px + 2vmin);
+input {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  font-weight: bold;
+}
+
+textarea {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 12px 6px -6px black;
+
 }
