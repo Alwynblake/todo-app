@@ -1,4 +1,5 @@
 import React from 'react';
+import './NoteCreateForm.scss';
 
 const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
     <ul>
@@ -8,7 +9,6 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           name='title'
           placeholder='title'
           type='text'
-          // value={this.state.title}
           onChange={handleTitle}
       />
 </li>
@@ -17,9 +17,8 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           name='content'
           placeholder='note content'
           type='text'
-          cols='20'
+          cols='50'
           rows='5'
-          // value={this.state.content}
           onChange={handleContent}
       />
           </li>

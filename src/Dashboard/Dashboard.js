@@ -70,8 +70,6 @@ console.log(this.state,'saadadasdadad');
             handleUpdateNote={this.handleUpdateNote}
 
     />
-          {/*<NoteCreateForm handleComplete={this.handleAddNote}/>*/}
-          {/*{ this.renderNotes() }*/}
         </div>
 
     );
