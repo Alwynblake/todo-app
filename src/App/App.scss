@@ -3,15 +3,42 @@
 
 @import "../styles/_vars.scss";
 
-.app {
+nav li:hover {
+  background-color: rgba(55, 100, 129, 0.79);
+}
 
-  background: url("../assets/notepad.png");
-  background-size: 100% auto;
+.app {
   font-size: calc(5px + 3vmin);
 }
 
-.app-img {
-  float: center;
+nav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: lightgrey;
+  background-image: linear-gradient(72deg, rgba(156, 84, 39, 0.45), rgba(188, 188, 188, 0.13));
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
+/* The navigation menu links */
+nav li {
+  float: left;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+}
 
+a {
+  background-color: lightgrey;
+  padding-left: 15px;
+  padding-right: 10px;
+  text-emphasis-position: right;
+  text-decoration: none;
+  display: block;
+  color: #818181;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './Landing.scss';
 
 const Landing = () => (
-    <h1>This todo application is a task-management tool.
-      It allows users to manage tasks from a computer or smartphone.</h1>
+    <h2>This simple todo application is a task-management tool.
+      It allows users to manage tasks from a computer or smartphone.</h2>
 );
 export default Landing;
