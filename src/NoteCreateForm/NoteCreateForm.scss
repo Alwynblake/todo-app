@@ -1,15 +1,18 @@
 @import "../styles/_vars.scss";
 
 input {
+  margin-top: 140px;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
   font-weight: bold;
+  font-size: 30px;
 }
 
 textarea {
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 12px 6px -6px black;
-
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 26px 7px -16px black;
+  font-size: 20px;
 }
+
