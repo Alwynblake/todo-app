@@ -18,7 +18,7 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
           placeholder='note content'
           type='text'
           cols='50'
-          rows='5'
+          rows='2'
           onChange={handleContent}
       />
           </li>

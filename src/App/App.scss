@@ -2,9 +2,8 @@
 // components can position their direct children
 
 @import "../styles/_vars.scss";
-/////////////////
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker|Righteous&display=swap');
-/////////////////
+
 nav li:hover {
   background-color: rgba(55, 100, 129, 0.79);
 }
@@ -28,7 +27,7 @@ nav {
 
 /* The navigation menu links */
 nav li {
-  float: left;
+  //float: left;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -39,9 +38,16 @@ a {
   font-family: 'Patrick Hand', cursive;
   background-color: lightgrey;
   padding-left: 15px;
-  padding-right: 10px;
+  padding-right: 18px;
   text-emphasis-position: right;
   text-decoration: none;
   display: block;
-  color: #818181;
+  color: #ffffff;
+  background-image:
+          linear-gradient(
+                          to right,
+                          lightgrey,
+                          rgb(55, 100, 129),
+                          lightgrey
+          );
 }
