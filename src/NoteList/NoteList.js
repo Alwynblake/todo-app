@@ -10,7 +10,7 @@ const NoteList = ({ notes, handleRemoveNote, handleUpdateNote
         {
           notes.map((note) => (
               <li key={note.id}>
-                <h1>-</h1>
+                {/*<h1>-</h1>*/}
                 {/*<h2>{note.title}</h2>*/}
                 {/*<p>{note.content}</p>*/}
                 <NoteItem note={note}

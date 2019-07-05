@@ -4,17 +4,10 @@
 
 body {
   background-color: hsla(0, 0%, 85%, 0.75);
-
 }
 
 img {padding-left: 40px};
 
 ul li:nth-child(odd) {
-  background: hsla(0, 0%, 84%, 0.74);
+  background: hsla(0, 0%, 75%, 0.54);
 }
-
-//.app {
-//  background: url("../assets/notepad.png");
-//  background-size: 100% auto;
-//  font-size: calc(5px + 3vmin);
-//}
