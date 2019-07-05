@@ -3,11 +3,17 @@
 // base should style just the html and the body of the website
 
 body {
-  background-color: hsla(0, 0%, 85%, 0.75);
+  background-color: hsla(0, 0%, 100%, 0.75);
+  //background-color: hsla(0, 0%, 85%, 0.75);
 }
 
 img {padding-left: 40px};
 
 ul li:nth-child(odd) {
   background: hsla(0, 0%, 75%, 0.54);
+}
+
+main {
+  //background-color: #D9D9D9;
+  background-color: #e0eff9;
 }
