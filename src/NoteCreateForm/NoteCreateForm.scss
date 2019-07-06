@@ -1,6 +1,7 @@
 @import "../styles/_vars.scss";
 
 input {
+  border-radius: 10px;
   font-family: 'Patrick Hand', cursive;
   margin-top: 140px;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -11,6 +12,7 @@ input {
 }
 
 textarea {
+  border-radius: 10px;
   font-family: 'Patrick Hand', cursive;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
