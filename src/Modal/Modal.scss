@@ -5,17 +5,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: grey;
+  background-color: rgba(103, 174, 214, 0.45);
   animation-name: animatetop;
   animation-duration: .7s;
 
   .modal-main {
     position: fixed;
     background: white;
-    top: 50%;
-    left: 50%;
+    top: 41%;
+    left: 55%;
     transform: translate(-50%, -50%);
-    width: 30%
+    width: 30%;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 40px 17px -16px black;
   }
 }
 
