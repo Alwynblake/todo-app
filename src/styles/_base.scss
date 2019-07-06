@@ -4,16 +4,14 @@
 
 body {
   background-color: hsla(0, 0%, 100%, 0.75);
-  //background-color: hsla(0, 0%, 85%, 0.75);
 }
 
 img {padding-left: 40px};
 
 ul li:nth-child(odd) {
-  background: hsla(0, 0%, 75%, 0.54);
+  background: rgba(133, 143, 151, 0.31);
 }
 
 main {
-  //background-color: #D9D9D9;
   background-color: #e0eff9;
 }
