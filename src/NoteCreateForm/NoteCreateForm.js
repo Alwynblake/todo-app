@@ -16,8 +16,7 @@ const NoteCreateForm = ({ handleTitle, handleContent, handleSubmit }) => (
       <textarea
           name='content'
           placeholder='note content'
-          type='text'
-          cols='50'
+          cols='54'
           rows='2'
           onChange={handleContent}
       />
