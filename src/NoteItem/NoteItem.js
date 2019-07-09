@@ -19,8 +19,8 @@ export default class NoteItem extends React.Component {
         <li className="render" key={currentNotes.id}>
           {currentNotes.title} : {currentNotes.content}
 
-          <button onClick={this.props.handleRemoveNote.bind(null, currentNotes)}>Remove</button>
           <button onClick={showModal}>Edit</button>
+          <button onClick={this.props.handleRemoveNote.bind(null, currentNotes)}>Remove</button>
           <Modal show={currentNotes.editing} hideModal={hideModal}>
             <NoteCreateForm note={currentNotes} handleComplete={handleUpdate}/>
           </Modal>
@@ -28,3 +28,5 @@ export default class NoteItem extends React.Component {
     )
   }
 }
+
+// <input type='text' value='this.state.username' id='username' onChange='inputHandler'

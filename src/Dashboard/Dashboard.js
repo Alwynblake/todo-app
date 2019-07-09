@@ -37,7 +37,7 @@ export default class Dashboard extends React.Component {
     event.preventDefault();
 
    await this.addNote(this.state.title,this.state.content);
-console.log(this.state,'saadadasdadad');
+// console.log(this.state,'saadadasdadad');
   };
 
   handleRemoveNote = (note) => {
